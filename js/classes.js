@@ -31,7 +31,7 @@ let o3 = {
     console.log(this);
   },
 };
-o3.f1();
+// o3.f1();
 o2.l = 50;
 let funcFromO = o.f1.bind(o2);
 let func2FromO = o.f2;
@@ -44,12 +44,22 @@ let funcFromO3Bind = o3.f1;
 // }
 
 // console.log(o);
-o.f1();
-o.f2();
-funcFromO();
-func2FromO();
-funcFromOBind();
-funcFromO3Bind();
-o.f3(5464654);
+// o.f1();
+// o.f2();
+// funcFromO();
+// func2FromO();
+// funcFromOBind();
+// funcFromO3Bind();
+// o.f3(5464654);
 // console.log(o.f2());
 // printL(o2);
+
+class CreateLB extends CreateL {
+  constructor(a, d, fs, b, k) {
+    super(a, d, 4, b);
+    this.k = k;
+  }
+}
+
+let o4 = new CreateLB(4, 8, 6, 8, 6);
+o4.f2();
