@@ -1,10 +1,10 @@
 let tout;
 function handleBtnClick() {
-  tout = setTimeout(() => {
+  tout = setInterval(() => {
     console.log("happends");
   }, 1000);
 }
 
 function handleBtnClickStop() {
-  clearTimeout(tout);
+  clearInterval(tout);
 }
