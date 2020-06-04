@@ -28,7 +28,7 @@ function f1(e) {
 function handleBtnClick() {
   let evt = new CustomEvent("crispy", {
     detail: {
-      date: new Date(),
+      ergerg: new Date(),
     },
   });
   document.getElementById("div").dispatchEvent(evt);
@@ -36,7 +36,7 @@ function handleBtnClick() {
 
 function evf(e) {
   console.log(e);
-  e.target.innerHTML = e.detail.date.toString();
+  e.target.innerHTML = e.detail.ergerg.toString();
 }
 
 function initCrispy() {
